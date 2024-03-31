@@ -19,14 +19,26 @@ const router = createRouter({
         {
           path: '',
           component: () => import('../views/messages/MessagesCenter.vue'),
+          meta: {
+            title: 'Message center',
+          },
         },
         {
           path: ':threadId',
           component: () => import('../views/messages/MessagesCenter.vue'),
+          meta: {
+            title: 'Conversation thread',
+          },
         },
       ],
     },
   ],
+});
+
+router.afterEach((to) => {
+  if (to.meta?.title) {
+    document.title = to.meta.title + ' | User Messags Demo';
+  }
 });
 
 export default router;
