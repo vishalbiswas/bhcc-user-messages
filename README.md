@@ -8,6 +8,10 @@ Tested responsiveness on QHD, FHD and mobile resolutions. Chrome and Firefox sup
 
 Based on https://ui8-core.herokuapp.com/message-center.html
 
+## Demo
+
+https://vishalbiswas.github.io/bhcc-user-messages
+
 ## Mock API
 
 All messages are fetched from a dummy API
